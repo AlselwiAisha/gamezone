@@ -1,16 +1,17 @@
 import React from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { View, Text } from "react-native";
+import { globalStyles } from "../styles/global";
 
-export default function ReviwDetails() {
+export default function ReviewDetails({ route }) {
+
+    const { title } = route.params;
+    const { body } = route.params;
+    const { rating } = route.params;
     return (
-        <View style={styles.container}>
-        <Text>Reviw Details Screen</Text>
+        <View style={globalStyles.container}>
+            <Text>{title}</Text>
+            <Text>{body}</Text>
+            <Text>{rating}</Text>
         </View>
     );
-    }
-
-const styles = StyleSheet.create({
-    container: {
-        padding: 24,
-    },
-});
+}
