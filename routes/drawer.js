@@ -10,7 +10,13 @@ const Drawer = createDrawerNavigator();
 function RootDrawerNavigator() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Home">
+      <Drawer.Navigator  initialRouteName="Home"
+        screenOptions={{
+          headerTitleAlign: 'center',
+          headerStyle: {
+            backgroundColor: 'lightgrey',
+          },
+        }}>
         <Drawer.Screen name="Home" component={HomeStack} />
         <Drawer.Screen name="About" component={About} />
       </Drawer.Navigator>
