@@ -17,6 +17,7 @@
     "expo-cli": "^6.3.10",
     "expo-splash-screen": "^0.27.5",
     "expo-status-bar": "~1.12.1",
+    "formik": "^2.4.6",
     "react": "18.2.0",
     "react-native": "0.74.3",
     "react-native-gesture-handler": "^2.18.1",
