@@ -30,7 +30,7 @@ export default function Home({ navigation }) {
                             name="close"
                             color="black"
                             onPress={() => setModalOpen(false)}
-                            style={styles.closeModel}
+                            style={[styles.closeModel,styles.addNew]}
                         />
                         <View style={styles.modelContent}>
                             <ReviewForm addReview={addReview} />
